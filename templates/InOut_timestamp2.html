@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>請確認資訊及金額</title>
+    <link rel='stylesheet' href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+<style>
+ 
+ td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 5px;
+      }
+</style>
+<table>
+  <thead>
+    <tr>
+        <th>ID</th>
+        <th>numplate</th>
+        <th>in_time</th>
+        <th>payment_status</th>
+        <th>payment</th>
+        <th>payment_time</th>
+        <th>out_time</th>
+        <th>extra_payment</th>
+    </tr>
+    </thead>    
+    <tbody>
+     {% for row in data %}    
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+                <td>{{row[5]}}</td>
+                <td>{{row[6]}}</td>
+                <td>{{row[7]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
