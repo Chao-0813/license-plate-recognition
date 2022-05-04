@@ -1,0 +1,10 @@
+entry switch:19
+exit switch:16
+
+entry green:4
+entry red:27
+exit green:5
+exit red:22
+
+entry gate:12
+exit gate:13
