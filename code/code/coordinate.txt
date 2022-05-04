@@ -1,1 +1,0 @@
-licence_plate_bike: 99%	(left_x:  211   top_y:  189   width:  173   height:   97)

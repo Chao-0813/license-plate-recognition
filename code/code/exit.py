@@ -1,1 +1,0 @@
-print("the car is exiting")
